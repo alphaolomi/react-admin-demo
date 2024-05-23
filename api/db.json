@@ -1,0 +1,103 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Amina Mwita",
+        "email": "amina.mwita@example.com",
+        "phone": "+255789123456",
+        "address": "Dar es Salaam, Tanzania"
+      },
+      {
+        "id": 2,
+        "name": "Juma Mwakalinga",
+        "email": "juma.mwakalinga@example.com",
+        "phone": "+255754321789",
+        "address": "Arusha, Tanzania"
+      },
+      {
+        "id": 3,
+        "name": "Fatuma Khamis",
+        "email": "fatuma.khamis@example.com",
+        "phone": "+255712345678",
+        "address": "Dodoma, Tanzania"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "Maize Flour",
+        "price": 2000,
+        "category": "Groceries",
+        "stock": 50
+      },
+      {
+        "id": 2,
+        "name": "Kitenge Fabric",
+        "price": 50000,
+        "category": "Clothing",
+        "stock": 20
+      },
+      {
+        "id": 3,
+        "name": "Smartphone",
+        "price": 300000,
+        "category": "Electronics",
+        "stock": 15
+      }
+    ],
+    "customers": [
+      {
+        "id": 1,
+        "name": "Salum Mvungi",
+        "email": "salum.mvungi@example.com",
+        "phone": "+255713456789",
+        "address": "Mwanza, Tanzania",
+        "purchaseHistory": [
+          {
+            "productId": 1,
+            "quantity": 10,
+            "date": "2024-05-01"
+          },
+          {
+            "productId": 2,
+            "quantity": 2,
+            "date": "2024-05-10"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Neema Kimaro",
+        "email": "neema.kimaro@example.com",
+        "phone": "+255764987123",
+        "address": "Tanga, Tanzania",
+        "purchaseHistory": [
+          {
+            "productId": 3,
+            "quantity": 1,
+            "date": "2024-04-15"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Michael Chacha",
+        "email": "michael.chacha@example.com",
+        "phone": "+255745123987",
+        "address": "Mbeya, Tanzania",
+        "purchaseHistory": [
+          {
+            "productId": 1,
+            "quantity": 5,
+            "date": "2024-03-20"
+          },
+          {
+            "productId": 3,
+            "quantity": 1,
+            "date": "2024-05-05"
+          }
+        ]
+      }
+    ]
+  }
+  
