@@ -1,5 +1,5 @@
 // in src/posts.tsx
-import { List, Datagrid, TextField, ReferenceField } from "react-admin";
+import { List, Datagrid, TextField, ReferenceField, DateInput, DateField } from "react-admin";
 
 import {
   Edit,
@@ -26,6 +26,7 @@ export const PostList = () => (
       />
       <TextField source="title" />
       <TextField source="body" />
+      <DateField source="published_at" />
     </Datagrid>
   </List>
 );
@@ -37,6 +38,7 @@ export const PostEdit = () => (
       <ReferenceInput source="userId" reference="users" />
       <TextInput source="title" />
       <TextInput source="body" />
+      <DateInput label="Publication date" source="published_at" defaultValue={new Date()} />
     </SimpleForm>
   </Edit>
 );
@@ -45,8 +47,9 @@ export const PostCreate = () => (
   <Create>
     <SimpleForm>
       <ReferenceInput source="userId" reference="users" />
-      <TextInput source="title" />
+      <TextInput source="title" required/>
       <TextInput source="body" multiline rows={5} />
+      <DateInput label="Publication date" source="published_at" defaultValue={new Date()} />
     </SimpleForm>
   </Create>
 );

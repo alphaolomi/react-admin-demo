@@ -17,20 +17,20 @@ import { Dashboard } from "./Dashboard";
 import Settings  from "./Settings";
 import Profile  from "./Profile";
 import { Route } from "react-router-dom";
+import { DarkTheme, LightTheme} from "./Theme"
+
+// import { ContainerLayout } from '@react-admin/ra-navigation';
 
 export const App = () => (
   <Admin
     dataProvider={dataProvider}
     authProvider={authProvider}
     dashboard={Dashboard}
+    theme={LightTheme}
+    darkTheme={DarkTheme}
+
+    // layout={ContainerLayout}
   >
-    {/* <Resource
-      name="customers"
-      options={{ label: "Customers" }}
-      list={ListGuesser}
-      edit={EditGuesser}
-      show={ShowGuesser}
-    /> */}
     <Resource
       name="users"
       icon={UserIcon}
@@ -51,14 +51,6 @@ export const App = () => (
       edit={PostEdit}
       show={ShowGuesser}
     />
-    {/* <Resource
-      name="products"
-      options={{ label: "Products" }}
-      list={ListGuesser}
-      edit={EditGuesser}
-      show={ShowGuesser}
-    /> */}
-
     <CustomRoutes>
       <Route path="/settings" element={<Settings />} />
       <Route path="/profile" element={<Profile />} />
