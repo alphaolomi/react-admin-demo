@@ -1,5 +1,7 @@
 # react-admin-demo
 
+Docs: [https://marmelab.com/react-admin/](https://marmelab.com/react-admin/)
+
 ## Installation
 
 Install the application dependencies by running:
